@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "npx biome lint --write",
+    "format": "npx biome format --write",
+    "check": "npx biome check --write",
+    "reporter": "npx biome check --reporter=summary"
   },
   "dependencies": {
     "next": "15.3.1",
