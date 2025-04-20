@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import '@/styles/main.scss'
 
 export const metadata: Metadata = {
@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     description: 'K-POP 글로벌 플랫폼 과제 테스트 - 프론트엔드 구현',
     images: ['/ht-logo.png'],
   },
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
