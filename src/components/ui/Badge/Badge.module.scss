@@ -4,21 +4,28 @@
   background-color: $primary-color;
   color: $text-color-light;
   font-weight: 900;
-  padding: 0.5rem 0.5rem;
+  font-size: 0.875rem;
+  padding: 0.1rem 0.25rem;
   border-radius: 0.5rem;
+	z-index: $z-index-badge;
 }
 
 .upcoming {
   background-color: $secondary-color;
   color: $text-color-light;
   font-weight: 700;
-  padding: 0.5rem 0.5rem;
+  font-size: 0.875rem;
+  padding: 0.1rem 0.25rem;
   border-radius: 0.5rem;
+	z-index: $z-index-badge;
 }
 
 .completed {
   background-color: $tertiary-color;
   color: $text-color-light;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  padding: 0.1rem 0.25rem;
+  border-radius: 0.5rem;
+	z-index: $z-index-badge;
 }

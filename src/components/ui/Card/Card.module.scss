@@ -1,0 +1,8 @@
+@use '@/styles/abstracts/mixins' as *;
+
+.card {
+  border-radius: 15px;
+  @include shadow(2);
+  background-color: white;
+  overflow: hidden;
+}
