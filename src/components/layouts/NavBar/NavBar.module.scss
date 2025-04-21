@@ -1,0 +1,41 @@
+@use '@/styles/abstracts/mixins' as *;
+@use '@/styles/abstracts/variables' as *;
+
+.nav-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: $secondary-color;
+	padding: 0.5rem 1rem;
+}
+
+.nav-item {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &.active {
+    font-weight: 700;
+    color: $text-color-light;
+  }
+}
+
+
+@include respond-to('tablet') {
+  .nav-container {
+		padding: 0.5rem 1rem;
+  }
+  .nav-item {
+    font-size: 1.25rem;
+  }
+}
+
+@include respond-to('desktop') {
+  .nav-container {
+		padding: 0.5rem 1rem;
+  }
+  .nav-item {
+    font-size: 1.5rem;
+  }
+}
