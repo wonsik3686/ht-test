@@ -5,19 +5,20 @@ import styles from './Button.module.scss'
 
 interface ButtonProps {
   children: React.ReactNode
-  onClick: () => void
+  onClick?: () => void
   variant: 'primary' | 'secondary' | 'disabled' | 'outline'
   rounded?: boolean
   className?: string
 }
 
-export default function Button({ children, onClick, variant, rounded, className }: ButtonProps) {
+export default function Button({ children, onClick, variant, rounded, className, ...props }: ButtonProps) {
   return (
     <button
       type='button'
-      className={clsx(styles[variant], styles[rounded ? 'rounded' : ''], className)}
+      className={clsx(className, styles[variant], styles[rounded ? 'rounded' : ''])}
       onClick={onClick}
       disabled={variant === 'disabled'}
+      {...props}
     >
       {children}
     </button>

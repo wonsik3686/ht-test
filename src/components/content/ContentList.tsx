@@ -23,8 +23,8 @@ function ContentList({ items }: ContentListProps) {
 
   return (
     <section className={styles.listContainer}>
-      {visibleItems.map((item) => (
-        <ContentCard key={item.id} item={item} />
+      {visibleItems.map((item, index) => (
+        <ContentCard key={item.id} item={{ ...item, rank: index + 1 }} />
       ))}
       <div ref={observerTarget} className='h-4 w-full' />
     </section>

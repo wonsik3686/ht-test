@@ -1,24 +1,42 @@
-.listContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 20px;
-}
+@use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
 
 .card {
-  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: row;
+	gap: 1rem;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+	cursor: pointer;
+	&:hover {
+		transform: scale(1.05);
+		background-color: rgba($tertiary-color, 0.2);
+	}
+	&:active {
+		transform: scale(1.02);
+		background-color: rgba($tertiary-color, 0.4);
+	}
 }
 
-.image {
-  width: 100%;
-  height: auto;
+.imageWrapper {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+	border-radius: 8px;
+	border: 1px solid $tertiary-color;
 }
 
 .title {
+  font-size: 21px;
+  font-weight: bold;
+  padding: 1rem 0.5rem;
+}
+
+.rank {
   font-size: 18px;
   font-weight: bold;
-  padding: 8px;
+  padding: 1rem 0.5rem;
+	text-decoration: underline;
+	text-underline-offset: 0.5rem;
 }

@@ -1,0 +1,28 @@
+export const bannerData = [
+  {
+    id: 1,
+    imageSrc: '/event/event1.png',
+    title: 'Hanteo Music Awards 2025',
+    content: '2025.04.21 ~ 2025.04.27',
+    status: 'in-progress',
+    link: 'https://awards.hanteo.com',
+    linkButtonLabel: '투표하기',
+  },
+  {
+    id: 2,
+    imageSrc: '/event/event2.png',
+    title: 'VOTE & WIN 2025 HMA Ticket Now!',
+    content: '2025.05.01 ~ 2025.05.07',
+    status: 'upcoming',
+    link: 'https://awards.hanteo.com',
+  },
+  {
+    id: 3,
+    imageSrc: '/event/event3.jpg',
+    title: '한터상회 32주년 한터뮤직어워즈 2025',
+    content: '2025.01.21 ~ 2025.01.27',
+    status: 'completed',
+    link: 'https://awards.hanteo.com',
+    linkButtonLabel: '보러가기',
+  },
+]
