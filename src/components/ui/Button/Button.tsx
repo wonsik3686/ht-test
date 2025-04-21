@@ -11,13 +11,14 @@ interface ButtonProps {
   className?: string
 }
 
-export default function Button({ children, onClick, variant, rounded, className }: ButtonProps) {
+export default function Button({ children, onClick, variant, rounded, className, ...props }: ButtonProps) {
   return (
     <button
       type='button'
-      className={clsx(styles[variant], styles[rounded ? 'rounded' : ''], className)}
+      className={clsx(className, styles[variant], styles[rounded ? 'rounded' : ''])}
       onClick={onClick}
       disabled={variant === 'disabled'}
+      {...props}
     >
       {children}
     </button>

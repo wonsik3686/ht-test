@@ -12,18 +12,16 @@
 }
 
 .swiper::part(bullet) {
-  background-color: #ccc;
+  background-color: $text-color-gray;
 }
 
 .swiper::part(bullet-active) {
-  background-color: #ff4081;
+  background-color: $primary-color;
 }
 
 .card {
-  position: relative;
   width: 100%;
   height: 14rem;
-	margin: 0.5rem 0;
 }
 
 .card__image {
@@ -34,21 +32,37 @@
 }
 
 .card__bottom {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: white;
   text-align: center;
 }
 
+.card__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__linkButton {
+  font-size: 0.8rem;
+  width: 5.5rem;
+}
+
 .card__title {
-  margin: 0;
-  font-size: 1.2em;
-  color: #333;
+  margin: 0 0.5rem 0 0;
+  font-size: 1rem;
+  color: $text-color-dark;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .card__content {
-  margin: 0.5rem 0 0;
-  font-size: 0.9em;
-  color: #666;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.5rem 1rem 0;
+  font-size: 0.75rem;
+  color: $text-color-gray;
 }
 
 .carousel__badge {
