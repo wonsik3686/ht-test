@@ -1,0 +1,11 @@
+@use '@/styles/abstracts/variables' as *;
+
+.footer {
+  background-color: $primary-color;
+  color: $text-color-light;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} 
