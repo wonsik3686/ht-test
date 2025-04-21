@@ -5,7 +5,7 @@ import styles from './Button.module.scss'
 
 interface ButtonProps {
   children: React.ReactNode
-  onClick: () => void
+  onClick?: () => void
   variant: 'primary' | 'secondary' | 'disabled' | 'outline'
   rounded?: boolean
   className?: string
