@@ -17,7 +17,7 @@ function CarouselItem({ imageSrc, title, content, status }: CarouselItemProps) {
         <Badge status={status} className={styles.carousel__badge}>
           {status === 'in-progress' ? '진행 중' : status === 'upcoming' ? '예정' : '종료'}
         </Badge>
-        <Image src={imageSrc} alt={title} layout='fill' objectFit='cover' />
+        <Image src={imageSrc} alt={title} fill style={{ objectFit: 'cover' }} />
       </div>
       <div className={styles.card__bottom}>
         <h3 className={styles.card__title}>{title}</h3>
