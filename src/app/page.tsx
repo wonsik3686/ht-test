@@ -1,19 +1,14 @@
 'use client'
+import ContentList from '@/components/content/ContentList'
 import Carousel from '@/components/ui/Carousel/Carousel'
+import { contentListMockData } from '@/mocks/contentListMockData'
 import styles from './styles.module.scss'
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <Carousel />
-      <section className={styles.features}>
-        <h2>Features</h2>
-        <ul>
-          <li>Feature 1</li>
-          <li>Feature 2</li>
-          <li>Feature 3</li>
-        </ul>
-      </section>
+      <ContentList items={contentListMockData} />
     </main>
   )
 }

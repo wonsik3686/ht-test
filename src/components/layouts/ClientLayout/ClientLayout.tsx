@@ -4,7 +4,7 @@ import NavBar from '@/components/layouts/NavBar/NavBar'
 import type { ReactNode } from 'react'
 import Footer from '../Footer/Footer'
 
-const ClientLayout: React.FC<{ children: ReactNode }> = ({ children }) => {
+function ClientLayout({ children }: { children: ReactNode }) {
   return (
     <div>
       <NavBar />
