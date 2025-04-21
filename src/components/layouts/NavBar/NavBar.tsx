@@ -34,32 +34,50 @@ export default function NavBar() {
         modules={[Navigation, A11y]}
       >
         <SwiperSlide data-category='chart'>
-          <Link href='/chart' className={clsx(styles['nav-item'], pathname === '/chart' && styles.active)}>
+          <Link
+            href='/category/chart'
+            className={clsx(styles['nav-item'], pathname === '/category/chart' && styles.active)}
+          >
             차트
           </Link>
         </SwiperSlide>
         <SwiperSlide data-category='whook'>
-          <Link href='/whook' className={clsx(styles['nav-item'], pathname === '/whook' && styles.active)}>
+          <Link
+            href='/category/whook'
+            className={clsx(styles['nav-item'], pathname === '/category/whook' && styles.active)}
+          >
             Whook
           </Link>
         </SwiperSlide>
         <SwiperSlide data-category='event'>
-          <Link href='/event' className={clsx(styles['nav-item'], pathname === '/event' && styles.active)}>
+          <Link
+            href='/category/event'
+            className={clsx(styles['nav-item'], pathname === '/category/event' && styles.active)}
+          >
             이벤트
           </Link>
         </SwiperSlide>
         <SwiperSlide data-category='news'>
-          <Link href='/news' className={clsx(styles['nav-item'], pathname === '/news' && styles.active)}>
+          <Link
+            href='/category/news'
+            className={clsx(styles['nav-item'], pathname === '/category/news' && styles.active)}
+          >
             뉴스
           </Link>
         </SwiperSlide>
         <SwiperSlide data-category='store'>
-          <Link href='/store' className={clsx(styles['nav-item'], pathname === '/store' && styles.active)}>
+          <Link
+            href='/category/store'
+            className={clsx(styles['nav-item'], pathname === '/category/store' && styles.active)}
+          >
             스토어
           </Link>
         </SwiperSlide>
         <SwiperSlide data-category='charging'>
-          <Link href='/charging' className={clsx(styles['nav-item'], pathname === '/charging' && styles.active)}>
+          <Link
+            href='/category/charging'
+            className={clsx(styles['nav-item'], pathname === '/category/charging' && styles.active)}
+          >
             충전소
           </Link>
         </SwiperSlide>

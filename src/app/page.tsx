@@ -1,54 +1,14 @@
 'use client'
-
-import Button from '@/components/ui/Button/Button'
+import ContentList from '@/components/content/ContentList'
 import Carousel from '@/components/ui/Carousel/Carousel'
-import { ArrowUp } from 'lucide-react'
+import { contentListMockData } from '@/mocks/contentListMockData'
+import styles from './styles.module.scss'
 
 export default function Home() {
   return (
-    <div>
+    <main className={styles.main}>
       <Carousel />
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='primary'
-      >
-        Click me
-      </Button>
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='secondary'
-      >
-        Click me
-      </Button>
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='disabled'
-      >
-        Click me
-      </Button>
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='outline'
-      >
-        Click me
-      </Button>
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='outline'
-        rounded
-      >
-        <ArrowUp />
-      </Button>
-    </div>
+      <ContentList items={contentListMockData} />
+    </main>
   )
 }
