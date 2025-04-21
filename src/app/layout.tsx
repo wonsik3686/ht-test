@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import '@/styles/main.scss'
+import ClientLayout from '@/components/layouts/ClientLayout/ClientLayout'
 
 export const metadata: Metadata = {
   title: '한터 글로벌',
@@ -33,7 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='ko'>
-      <body>{children}</body>
+      <body>
+        <ClientLayout>{children}</ClientLayout>
+      </body>
     </html>
   )
 }
