@@ -1,0 +1,24 @@
+@use '@/styles/abstracts/variables' as *;
+
+.in-progress {
+  background-color: $primary-color;
+  color: $text-color-light;
+  font-weight: 900;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.upcoming {
+  background-color: $secondary-color;
+  color: $text-color-light;
+  font-weight: 700;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.completed {
+  background-color: $tertiary-color;
+  color: $text-color-light;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
