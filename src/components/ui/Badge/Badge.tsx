@@ -2,7 +2,7 @@ import clsx from 'clsx'
 import type { ReactNode } from 'react'
 import styles from './Badge.module.scss'
 
-interface BadgeProps {
+type BadgeProps = {
   status: 'in-progress' | 'upcoming' | 'completed'
   children: ReactNode
   className?: string
