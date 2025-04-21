@@ -1,54 +1,19 @@
 'use client'
-
-import Button from '@/components/ui/Button/Button'
 import Carousel from '@/components/ui/Carousel/Carousel'
-import { ArrowUp } from 'lucide-react'
+import styles from './styles.module.scss'
 
 export default function Home() {
   return (
-    <div>
+    <main className={styles.main}>
       <Carousel />
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='primary'
-      >
-        Click me
-      </Button>
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='secondary'
-      >
-        Click me
-      </Button>
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='disabled'
-      >
-        Click me
-      </Button>
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='outline'
-      >
-        Click me
-      </Button>
-      <Button
-        onClick={() => {
-          console.log('clicked')
-        }}
-        variant='outline'
-        rounded
-      >
-        <ArrowUp />
-      </Button>
-    </div>
+      <section className={styles.features}>
+        <h2>Features</h2>
+        <ul>
+          <li>Feature 1</li>
+          <li>Feature 2</li>
+          <li>Feature 3</li>
+        </ul>
+      </section>
+    </main>
   )
 }
