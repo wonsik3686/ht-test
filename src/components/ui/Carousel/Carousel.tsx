@@ -16,6 +16,7 @@ export default function Carousel() {
         slidesPerView={1}
         spaceBetween={30}
         pagination={{ clickable: true }}
+        loop={true}
         modules={[Navigation, A11y, Pagination]}
       >
         {bannerData.map((banner) => (
