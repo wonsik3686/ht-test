@@ -18,8 +18,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
-                <h3 className={styles.title}>실시간 차트</h3>
-                <ContentList items={contentListMockData} />
+                <ContentList title='실시간 차트' items={contentListMockData} />
               </main>
             ),
           },
@@ -29,8 +28,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
-                <h3 className={styles.title}>whook</h3>
-                <ContentList items={contentListMockData} />
+                <ContentList title='whook' items={contentListMockData} />
               </main>
             ),
           },
@@ -40,8 +38,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
-                <h3 className={styles.title}>이벤트</h3>
-                <ContentList items={contentListMockData} />
+                <ContentList title='이벤트' items={contentListMockData} />
               </main>
             ),
           },
@@ -51,8 +48,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
-                <h3 className={styles.title}>뉴스</h3>
-                <ContentList items={contentListMockData} />
+                <ContentList title='뉴스' items={contentListMockData} />
               </main>
             ),
           },
@@ -62,8 +58,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
-                <h3 className={styles.title}>스토어</h3>
-                <ContentList items={contentListMockData} />
+                <ContentList title='스토어' items={contentListMockData} />
               </main>
             ),
           },
@@ -73,8 +68,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
-                <h3 className={styles.title}>충전소</h3>
-                <ContentList items={contentListMockData} />
+                <ContentList title='충전소' items={contentListMockData} />
               </main>
             ),
           },

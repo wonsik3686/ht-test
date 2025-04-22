@@ -11,12 +11,12 @@
 	height: 16.75rem;
 }
 
-.swiper::part(bullet) {
-  background-color: $text-color-gray;
+.bulletActiveColor {
+  background-color: #00f;
 }
 
-.swiper::part(bullet-active) {
-  background-color: $primary-color;
+.bulletColor {
+  background-color: $tertiary-color;
 }
 
 .card {

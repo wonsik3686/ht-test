@@ -17,7 +17,7 @@ export default function Carousel() {
         className={styles.swiper}
         slidesPerView={1}
         spaceBetween={30}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true, bulletActiveClass: styles.bulletActiveColor, bulletClass: styles.bulletColor }}
         loop={true}
         modules={[Navigation, A11y, Pagination]}
       >
