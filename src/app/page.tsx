@@ -4,7 +4,7 @@ import CategorySwiper from '@/components/layouts/CategorySwiper/CategorySwiper'
 import NavBar from '@/components/layouts/NavBar/NavBar'
 import Carousel from '@/components/ui/Carousel/Carousel'
 import { contentListMockData } from '@/mocks/contentListMockData'
-import styles from './styles.module.scss'
+import styles from './landing.module.scss'
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
+                <h3 className={styles.title}>실시간 차트</h3>
                 <ContentList items={contentListMockData} />
               </main>
             ),
@@ -28,6 +29,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
+                <h3 className={styles.title}>whook</h3>
                 <ContentList items={contentListMockData} />
               </main>
             ),
@@ -38,6 +40,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
+                <h3 className={styles.title}>이벤트</h3>
                 <ContentList items={contentListMockData} />
               </main>
             ),
@@ -48,6 +51,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
+                <h3 className={styles.title}>뉴스</h3>
                 <ContentList items={contentListMockData} />
               </main>
             ),
@@ -58,6 +62,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
+                <h3 className={styles.title}>스토어</h3>
                 <ContentList items={contentListMockData} />
               </main>
             ),
@@ -68,6 +73,7 @@ export default function Home() {
             children: (
               <main className={styles.main}>
                 <Carousel />
+                <h3 className={styles.title}>충전소</h3>
                 <ContentList items={contentListMockData} />
               </main>
             ),
