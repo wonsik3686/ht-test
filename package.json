@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "npx biome lint --write",
+    "lint:style": "stylelint src/**/**.scss --fix",
     "format": "npx biome format --write",
     "check": "npx biome check --write",
     "reporter": "npx biome check --reporter=summary"
@@ -30,11 +31,13 @@
     "@types/react-dom": "^19",
     "husky": "^9.1.7",
     "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
     "sass": "^1.86.3",
     "stylelint": "^16.18.0",
     "stylelint-config-recommended": "^16.0.0",
     "stylelint-config-recommended-scss": "^14.1.0",
     "stylelint-order": "^7.0.0",
+    "stylelint-prettier": "^5.0.3",
     "stylelint-scss": "^6.11.1",
     "typescript": "^5"
   },

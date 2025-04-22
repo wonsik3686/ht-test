@@ -4,7 +4,7 @@
 .navContainer {
   background-color: $secondary-color;
   overflow: hidden;
-	padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   width: 100%;
 }
 
@@ -21,10 +21,9 @@
   }
 }
 
-
 @include respond-to('tablet') {
   .navContainer {
-		padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
   }
   .navItem {
     font-size: 1.25rem;
@@ -33,7 +32,7 @@
 
 @include respond-to('desktop') {
   .navContainer {
-		padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
   }
   .navItem {
     font-size: 1.5rem;

@@ -3,25 +3,25 @@
 
 .card {
   border-radius: 8px;
-	cursor: pointer;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
-	gap: 1rem;
+  gap: 1rem;
   overflow: hidden;
   width: 100%;
-	&:hover {
-		background-color: rgba($tertiary-color, 0.2);
-		transform: scale(1.05);
-	}
-	&:active {
-		background-color: rgba($tertiary-color, 0.4);
-		transform: scale(1.02);
-	}
+  &:hover {
+    background-color: rgba($tertiary-color, 0.2);
+    transform: scale(1.05);
+  }
+  &:active {
+    background-color: rgba($tertiary-color, 0.4);
+    transform: scale(1.02);
+  }
 }
 
 .imageWrapper {
-	border: 1px solid $tertiary-color;
-	border-radius: 8px;
+  border: 1px solid $tertiary-color;
+  border-radius: 8px;
   height: 4rem;
   position: relative;
   width: 4rem;
@@ -37,6 +37,6 @@
   font-size: 18px;
   font-weight: bold;
   padding: 1rem 0.5rem;
-	text-decoration: underline;
-	text-underline-offset: 0.5rem;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
