@@ -6,10 +6,11 @@ import { useState } from 'react'
 import styles from './ContentList.module.scss'
 
 type ContentListProps = {
+  title: string
   items: { id: string; title: string; imageUrl: string }[]
 }
 
-function ContentList({ items }: ContentListProps) {
+function ContentList({ title, items }: ContentListProps) {
   const [visibleItems, setVisibleItems] = useState(items.slice(0, 10))
   const fetchNextPage = () => {
     setVisibleItems((prevItems) => [...prevItems, ...items.slice(prevItems.length, prevItems.length + 10)])
@@ -23,6 +24,7 @@ function ContentList({ items }: ContentListProps) {
 
   return (
     <section className={styles.listContainer}>
+      <h3 className={styles.title}>{title}</h3>
       {visibleItems.map((item, index) => (
         <ContentCard key={item.id} item={{ ...item, rank: index + 1 }} />
       ))}

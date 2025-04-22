@@ -1,41 +1,40 @@
 @use '@/styles/abstracts/mixins' as *;
 @use '@/styles/abstracts/variables' as *;
 
-.nav-container {
-  width: 100%;
-  overflow: hidden;
+.navContainer {
   background-color: $secondary-color;
-	padding: 0.5rem 1rem;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  width: 100%;
 }
 
-.nav-item {
-  padding: 0.5rem 1rem;
+.navItem {
+  cursor: pointer;
   font-size: 1rem;
   font-weight: 500;
-  cursor: pointer;
+  padding: 0.5rem 1rem;
   white-space: nowrap;
 
   &.active {
-    font-weight: 700;
     color: $text-color-light;
+    font-weight: 700;
   }
 }
 
-
 @include respond-to('tablet') {
-  .nav-container {
-		padding: 0.5rem 1rem;
+  .navContainer {
+    padding: 0.5rem 1rem;
   }
-  .nav-item {
+  .navItem {
     font-size: 1.25rem;
   }
 }
 
 @include respond-to('desktop') {
-  .nav-container {
-		padding: 0.5rem 1rem;
+  .navContainer {
+    padding: 0.5rem 1rem;
   }
-  .nav-item {
+  .navItem {
     font-size: 1.5rem;
   }
 }

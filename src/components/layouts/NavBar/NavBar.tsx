@@ -47,7 +47,7 @@ export default function NavBar() {
   const hash = useHash()
 
   return (
-    <nav className={styles['nav-container']}>
+    <nav className={styles.navContainer}>
       <Swiper
         slidesPerView={5.7}
         spaceBetween={10}
@@ -72,7 +72,7 @@ export default function NavBar() {
             <Button
               variant='ghost'
               className={clsx(
-                styles['nav-item'],
+                styles.navItem,
                 (hash === item.href || (hash === '' && item.id === 'chart')) && styles.active,
               )}
               onClick={() => {

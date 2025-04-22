@@ -1,12 +1,12 @@
 'use client'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
 import 'swiper/scss/a11y'
 import { bannerData } from '@/mocks/bannerData'
 import { A11y, Navigation, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import styles from './Carousel.module.scss'
 import CarouselItem from './CarouselItem'
 
@@ -17,7 +17,13 @@ export default function Carousel() {
         className={styles.swiper}
         slidesPerView={1}
         spaceBetween={30}
-        pagination={{ clickable: true }}
+        pagination={{
+          clickable: true,
+          type: 'bullets',
+          horizontalClass: styles.customPagination,
+          bulletActiveClass: styles.bulletActiveColor,
+          bulletClass: styles.bulletColor,
+        }}
         loop={true}
         modules={[Navigation, A11y, Pagination]}
       >

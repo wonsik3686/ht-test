@@ -3,9 +3,9 @@
 @import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css');
 
 body {
-  font-family: 'NanumSquareBold', sans-serif;
-  font-size: $font-size-medium;
   color: $text-color-dark;
+  font-family: 'NanumSquareBold', sans-serif;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
