@@ -5,6 +5,7 @@ import { HashNavigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
 import 'swiper/scss/hash-navigation'
+import useScrollToTop from '@/hooks/useScrollToTop'
 import { useRef } from 'react'
 
 type CategorySwiperProps = {
@@ -19,6 +20,7 @@ export type CategorySwiperItem = {
 
 function CategorySwiper({ items }: CategorySwiperProps) {
   const swiperRef = useRef<SwiperType>(null)
+  const scrollToTop = useScrollToTop()
 
   return (
     <Swiper
@@ -26,6 +28,9 @@ function CategorySwiper({ items }: CategorySwiperProps) {
       slidesPerView={1}
       modules={[HashNavigation]}
       hashNavigation={{ watchState: true }}
+      onHashChange={() => {
+        scrollToTop()
+      }}
       onSwiper={(swiper) => {
         swiperRef.current = swiper
       }}
