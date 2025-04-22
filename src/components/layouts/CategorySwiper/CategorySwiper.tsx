@@ -1,22 +1,37 @@
 'use client'
 
-import { History } from 'swiper/modules'
+import type { Swiper as SwiperType } from 'swiper'
+import { HashNavigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/scss'
+import 'swiper/scss/hash-navigation'
+import { useRef } from 'react'
+
 type CategorySwiperProps = {
   items: CategorySwiperItem[]
 }
 
 export type CategorySwiperItem = {
   id: string
-  history: string
+  hash: string
   children: React.ReactNode
 }
 
 function CategorySwiper({ items }: CategorySwiperProps) {
+  const swiperRef = useRef<SwiperType>(null)
+
   return (
-    <Swiper history={true} slidesPerView={1} modules={[History]}>
+    <Swiper
+      history={true}
+      slidesPerView={1}
+      modules={[HashNavigation]}
+      hashNavigation={{ watchState: true }}
+      onSwiper={(swiper) => {
+        swiperRef.current = swiper
+      }}
+    >
       {items.map((item) => (
-        <SwiperSlide key={`category-swiper-${item.id}`} data-history={item.history}>
+        <SwiperSlide key={`category-swiper-${item.id}`} data-hash={item.hash}>
           {item.children}
         </SwiperSlide>
       ))}

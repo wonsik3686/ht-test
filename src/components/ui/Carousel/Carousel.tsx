@@ -1,8 +1,10 @@
 'use client'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/navigation'
+import 'swiper/scss'
+import 'swiper/scss/navigation'
+import 'swiper/scss/pagination'
+import 'swiper/scss/a11y'
 import { bannerData } from '@/mocks/bannerData'
 import { A11y, Navigation, Pagination } from 'swiper/modules'
 import styles from './Carousel.module.scss'
