@@ -12,7 +12,7 @@
     "reporter": "npx biome check --reporter=summary"
   },
   "lint-staged": {
-    "*.{js,ts,jsx,tsx,json,jsonc,scss,css}": "npx biome check --write"
+    "*.{js,ts,jsx,tsx,json,jsonc,css}": "npx biome check --write"
   },
   "dependencies": {
     "clsx": "^2.1.1",
