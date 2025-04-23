@@ -5,17 +5,18 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-	width: 100%;
-	@include respond-to('tablet') {
-		width: 90vw;
-	}
-	@include respond-to('desktop') {
-		width: 50rem;
-	}
+  padding: 0 1rem;
+  width: 100%;
+  @include respond-to('tablet') {
+    width: 90vw;
+  }
+  @include respond-to('desktop') {
+    width: 50rem;
+  }
 }
 
 .title {
-	color: $foreground-gray;
+  color: $foreground-gray;
   font-size: 0.875rem;
   font-weight: bold;
 }
