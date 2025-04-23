@@ -25,3 +25,15 @@
     box-shadow: 0px 16px 20px 0px rgba(48, 48, 48, 0.62);
   }
 }
+
+@mixin font-weight($weight) {
+  @if $weight == 'extrabold' {
+    font-family: 'NanumSquareExtraBold', sans-serif;
+  } @else if $weight == 'bold' {
+    font-family: 'NanumSquareBold', sans-serif;
+  } @else if $weight == 'regular' {
+    font-family: 'NanumSquare', sans-serif;
+  } @else if $weight == 'light' {
+    font-family: 'NanumSquareLight', sans-serif;
+  }
+}

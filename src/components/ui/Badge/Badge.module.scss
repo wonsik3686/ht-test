@@ -1,13 +1,14 @@
 @use '@/styles/abstracts/variables' as *;
+@use '@/styles/abstracts/mixins' as *;
 
 .in-progress {
   background-color: $primary-color;
   border-radius: 0.5rem;
   color: $text-color-light;
   font-size: 0.875rem;
-  font-weight: 900;
+  @include font-weight('extrabold');
   padding: 0.1rem 0.25rem;
-	z-index: $z-index-badge;
+  z-index: $z-index-badge;
 }
 
 .upcoming {
@@ -15,9 +16,9 @@
   border-radius: 0.5rem;
   color: $text-color-light;
   font-size: 0.875rem;
-  font-weight: 700;
+  @include font-weight('extrabold');
   padding: 0.1rem 0.25rem;
-	z-index: $z-index-badge;
+  z-index: $z-index-badge;
 }
 
 .completed {
@@ -25,7 +26,7 @@
   border-radius: 0.5rem;
   color: $text-color-light;
   font-size: 0.875rem;
-  font-weight: 700;
+  @include font-weight('extrabold');
   padding: 0.1rem 0.25rem;
-	z-index: $z-index-badge;
+  z-index: $z-index-badge;
 }

@@ -4,11 +4,16 @@
 
 body {
   color: $text-color-dark;
-  font-family: 'NanumSquareBold', sans-serif;
+  font-family: 'NanumSquare', sans-serif;
   font-size: 16px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
   line-height: 1.2;
 }

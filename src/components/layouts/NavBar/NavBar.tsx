@@ -1,6 +1,5 @@
 'use client'
 
-import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/a11y'
@@ -8,7 +7,6 @@ import styles from '@/components/layouts/NavBar/NavBar.module.scss'
 import Button from '@/components/ui/Button/Button'
 import useHash from '@/hooks/useHash'
 import clsx from 'clsx'
-import { A11y, Navigation } from 'swiper/modules'
 
 const navItems = [
   {
@@ -47,43 +45,25 @@ export default function NavBar() {
   const hash = useHash()
 
   return (
-    <nav className={styles.navContainer}>
-      <Swiper
-        slidesPerView={5.7}
-        spaceBetween={10}
-        breakpoints={{
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 5,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5.7,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[Navigation, A11y]}
-      >
+    <nav className={styles.navbar}>
+      <div className={styles.navbar__items}>
         {navItems.map((item) => (
-          <SwiperSlide key={item.id} data-category={item.id}>
-            <Button
-              variant='ghost'
-              className={clsx(
-                styles.navItem,
-                (hash === item.href || (hash === '' && item.id === 'chart')) && styles.active,
-              )}
-              onClick={() => {
-                window.location.href = item.href
-              }}
-            >
-              {item.label}
-            </Button>
-          </SwiperSlide>
+          <Button
+            key={item.id}
+            data-category={item.id}
+            variant='ghost'
+            className={clsx(
+              styles.navbar__item,
+              (hash === item.href || (hash === '' && item.id === 'chart')) && styles.navbar__item_active,
+            )}
+            onClick={() => {
+              window.location.href = item.href
+            }}
+          >
+            {item.label}
+          </Button>
         ))}
-      </Swiper>
+      </div>
     </nav>
   )
 }

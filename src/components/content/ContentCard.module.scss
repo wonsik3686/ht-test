@@ -29,13 +29,13 @@
 
 .title {
   font-size: 1.125rem;
-  font-weight: bold;
+  @include font-weight('regular');
   padding: 1rem 0.5rem;
 }
 
 .rank {
   font-size: 18px;
-  font-weight: bold;
+  @include font-weight('light');
   padding: 1rem 0.5rem;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
