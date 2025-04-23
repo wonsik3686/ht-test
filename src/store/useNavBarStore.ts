@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-interface NavBarState {
+type NavBarState = {
   activeCategory: string
   currentCategoryIndex: number
   setActiveCategory: (category: string) => void

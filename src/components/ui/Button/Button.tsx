@@ -3,7 +3,7 @@
 import styles from '@/components/ui/Button/Button.module.scss'
 import clsx from 'clsx'
 
-interface ButtonProps {
+type ButtonProps = {
   children: React.ReactNode
   onClick?: () => void
   variant: 'primary' | 'secondary' | 'disabled' | 'outline' | 'ghost'
