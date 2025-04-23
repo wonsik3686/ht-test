@@ -1,9 +1,9 @@
 'use client'
 
 import ContentCard from '@/components/content/ContentCard'
+import styles from '@/components/content/ContentList.module.scss'
 import useInfiniteScroll from '@/hooks/useInfiniteScroll'
 import { useState } from 'react'
-import styles from './ContentList.module.scss'
 
 type ContentListProps = {
   title: string

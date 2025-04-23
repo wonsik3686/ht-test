@@ -1,7 +1,7 @@
 'use client'
 
+import styles from '@/components/ui/Button/Button.module.scss'
 import clsx from 'clsx'
-import styles from './Button.module.scss'
 
 interface ButtonProps {
   children: React.ReactNode

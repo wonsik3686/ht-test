@@ -1,6 +1,6 @@
+import styles from '@/components/ui/Badge/Badge.module.scss'
 import clsx from 'clsx'
 import type { ReactNode } from 'react'
-import styles from './Badge.module.scss'
 
 type BadgeProps = {
   status: 'in-progress' | 'upcoming' | 'completed'

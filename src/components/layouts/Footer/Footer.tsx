@@ -1,7 +1,7 @@
 'use client'
 
+import styles from '@/components/layouts/Footer/Footer.module.scss'
 import ScrollToTopButton from '@/components/ui/ScrollToTopButton/ScrollToTopButton'
-import styles from './Footer.module.scss'
 
 export default function Footer() {
   return (

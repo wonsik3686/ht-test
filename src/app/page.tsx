@@ -1,10 +1,10 @@
 'use client'
+import styles from '@/app/landing.module.scss'
 import ContentList from '@/components/content/ContentList'
 import CategorySwiper from '@/components/layouts/CategorySwiper/CategorySwiper'
 import NavBar from '@/components/layouts/NavBar/NavBar'
 import Carousel from '@/components/ui/Carousel/Carousel'
 import { contentListMockData } from '@/mocks/contentListMockData'
-import styles from './landing.module.scss'
 
 export default function Home() {
   return (

@@ -4,11 +4,11 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/a11y'
+import styles from '@/components/layouts/NavBar/NavBar.module.scss'
 import Button from '@/components/ui/Button/Button'
 import useHash from '@/hooks/useHash'
 import clsx from 'clsx'
 import { A11y, Navigation } from 'swiper/modules'
-import styles from './NavBar.module.scss'
 
 const navItems = [
   {

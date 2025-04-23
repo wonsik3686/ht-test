@@ -4,11 +4,11 @@ import 'swiper/scss'
 import 'swiper/scss/navigation'
 import 'swiper/scss/pagination'
 import 'swiper/scss/a11y'
+import styles from '@/components/ui/Carousel/Carousel.module.scss'
+import CarouselItem from '@/components/ui/Carousel/CarouselItem'
 import { bannerData } from '@/mocks/bannerData'
 import { A11y, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import styles from './Carousel.module.scss'
-import CarouselItem from './CarouselItem'
 
 export default function Carousel() {
   return (

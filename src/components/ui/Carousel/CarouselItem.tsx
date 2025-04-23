@@ -1,9 +1,9 @@
+import styles from '@/components/ui/Carousel/Carousel.module.scss'
 import Image from 'next/image'
 import Link from 'next/link'
 import Badge from '../Badge/Badge'
 import Button from '../Button/Button'
 import Card from '../Card/Card'
-import styles from './Carousel.module.scss'
 
 type CarouselItemProps = {
   imageSrc: string

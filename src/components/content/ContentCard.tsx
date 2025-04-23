@@ -1,7 +1,7 @@
 'use client'
 
+import styles from '@/components/content/ContentCard.module.scss'
 import Image from 'next/image'
-import styles from './ContentCard.module.scss'
 
 type ContentCardProps = {
   item: { id: string; title: string; imageUrl: string; rank: number }
