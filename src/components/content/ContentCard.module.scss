@@ -29,8 +29,11 @@
 
 .title {
   font-size: 1.125rem;
-  @include font-weight('regular');
+  overflow: hidden;
   padding: 1rem 0.5rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  @include font-weight('regular');
 }
 
 .rank {
