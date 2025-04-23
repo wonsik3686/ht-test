@@ -21,7 +21,7 @@ export default function Banner({ imageSrc, title, content, status, link, linkBut
         <Badge status={status} className={styles.banner__badge}>
           {status === 'in-progress' ? '진행 중' : status === 'upcoming' ? '예정' : '종료'}
         </Badge>
-        <Image src={imageSrc} alt={title} fill style={{ objectFit: 'cover' }} />
+        <Image src={imageSrc} alt={title} fill style={{ objectFit: 'cover' }} priority />
       </div>
       <div className={styles.banner__bottom}>
         <div className={styles.banner__label}>

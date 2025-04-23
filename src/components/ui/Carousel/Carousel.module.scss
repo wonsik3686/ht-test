@@ -1,8 +1,6 @@
 @use '@/styles/abstracts/variables' as *;
 
 .carousel {
-  margin: 0 auto;
-  max-width: 800px;
   width: 100%;
 
   &__badge {
@@ -32,52 +30,4 @@
 
 .swiper {
   height: 14.85rem;
-  padding: 0 0.25rem;
-  width: 100%;
-}
-
-.Banner {
-  height: 13rem;
-  width: 100%;
-
-  &__image {
-    height: 70%;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-  }
-
-  &__bottom {
-    background-color: white;
-    padding: 0.5rem;
-    text-align: center;
-  }
-
-  &__label {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__linkButton {
-    font-size: 0.8rem;
-    width: 5.5rem;
-  }
-
-  &__title {
-    color: $text-color-dark;
-    font-size: 1rem;
-    margin: 0 0.5rem 0 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  &__content {
-    color: $text-color-gray;
-    display: flex;
-    font-size: 0.75rem;
-    justify-content: flex-end;
-    margin: 0.5rem 1rem 0;
-  }
 }
