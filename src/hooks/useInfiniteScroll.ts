@@ -6,7 +6,7 @@ type useInfiniteScrollProps = {
   isLoading: boolean
 }
 
-export default function useInfiniteScroll({ fetchNextPage, hasNextPage, isLoading }: useInfiniteScrollProps) {
+export function useInfiniteScroll({ fetchNextPage, hasNextPage, isLoading }: useInfiniteScrollProps) {
   const targetRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {

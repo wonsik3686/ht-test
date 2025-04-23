@@ -2,7 +2,7 @@
 
 import ContentCard from '@/components/content/ContentCard'
 import styles from '@/components/content/ContentList.module.scss'
-import useInfiniteScroll from '@/hooks/useInfiniteScroll'
+import { useInfiniteScroll } from '@/hooks/useInfiniteScroll'
 import { useState } from 'react'
 
 type ContentListProps = {
